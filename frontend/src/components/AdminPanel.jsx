@@ -27,7 +27,7 @@ function AdminPanel({setIsAuthenticated, isAuthenticated}) {
               {/* Tab for Conversations */}
               <li
                 className={`cursor-pointer ${
-                  activeTab === 'conversations' ? 'text-[#234b66] my-5 py-6 hover:-translate-y-1 hover:scale-100 ease-in-out duration-300' : 'my-5 py-6 hover:-translate-y-1 hover:scale-100 ease-in-out duration-300'
+                  activeTab === 'conversations' ? 'my-5 py-6 hover:-translate-y-1 hover:scale-100 ease-in-out duration-300' : 'my-5 py-6 hover:-translate-y-1 hover:scale-100 ease-in-out duration-300'
                 }`}
                 onClick={() => setActiveTab('conversations')}
               >

@@ -72,3 +72,6 @@ def conversation_stats(request):
     data = [{'tag': stat.tag, 'count': stat.conversation_count} for stat in stats]
 
     return JsonResponse({'data': data})
+
+def recieve_response(request):
+    return JsonResponse({'data': 'data'})
