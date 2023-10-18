@@ -4,12 +4,10 @@ from django.db import models
 
 class Conversation(models.Model):
     id = models.CharField(max_length=255, unique=True, default="00000000", primary_key=True)
-    reamaze_url = models.URLField()
     name = models.CharField(max_length=255)
-    ai_message = models.TextField()
-    human_message = models.TextField()
+    aidr_response = models.TextField() # name of response
+    prompt = models.TextField() # user input
     date = models.DateTimeField(auto_now_add=True)
-    tags = models.CharField(max_length=255)  # you can use a ManyToManyField for tags for more flexibility
 
     def __str__(self):
         return self.name

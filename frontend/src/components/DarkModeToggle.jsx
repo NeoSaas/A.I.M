@@ -25,7 +25,7 @@ function DarkModeToggle() {
     }
 
     return (
-        <button onClick={toggleDarkMode} className="flex items-center bg-transparent transition-colors duration-300 ">
+        <button onClick={toggleDarkMode} className="flex items-center bg-transparent transition-colors duration-300">
             {darkMode ? <FaSun className="w-9 h-auto" /> : <FaMoon className=" w-9 h-auto" />}
         </button>
     );
