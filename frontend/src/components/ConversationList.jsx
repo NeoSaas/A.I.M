@@ -49,7 +49,7 @@ const ConversationList = (props) => {
     }, [props.searchQuery, conversations]);
 
     return (
-        <div className="p-4 mx-6">
+        <div className="p-4 mx-5">
             {filteredConversations.map(convo => (
                 <Conversation
                 key={convo.id}

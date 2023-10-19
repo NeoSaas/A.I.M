@@ -20,7 +20,7 @@ function AdminPanel({setIsAuthenticated, isAuthenticated}) {
     };
   
     return (
-      <div className='inline-flex w-screen bg-[#FAF9F6] dark:bg-slate-800 text-black dark:text-slate-300'>
+      <div className='inline-flex w-full bg-[#FAF9F6] dark:bg-slate-800 text-black dark:text-slate-300'>
         <TopBar/>
         <nav className='inline-block h-full w-max bg-inherit my-16'>
           <ul className="inline-block mx-8 space-x-1 space-y-4 mt-4 w-max">
@@ -50,7 +50,7 @@ function AdminPanel({setIsAuthenticated, isAuthenticated}) {
               </li>
             </ul>
         </nav>
-        <div className=" bg-gradient-to-b from-[#FAF9F6] to-slate-500 dark:bg-gradient-to-b dark:from-[#273d4f] dark:to-slate-900 dark:text-white min-h-screen dark:transition-colors dark:duration-300 transition-colors duration-300 ease-in-out dark:ease-in-out w-full">
+        <div className=" inline-block bg-gradient-to-b from-[#FAF9F6] to-slate-500 dark:bg-gradient-to-b dark:from-[#273d4f] dark:to-slate-900 dark:text-white min-h-screen dark:transition-colors dark:duration-300 transition-colors duration-300 ease-in-out dark:ease-in-out">
           <h1 className="text-center text-3xl py-4">Administrator Panel</h1>
           {activeTab == 'conversations' ? (
             <>

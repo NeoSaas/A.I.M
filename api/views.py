@@ -12,6 +12,7 @@ from .serializers import ConversationStatSerializer, ConversationSerializer
 from rest_framework.views import APIView
 from django.core.management import call_command
 import requests
+import boto3
 
 def index(request):
     tag_to_monitor = 'your_tag_name'
@@ -73,5 +74,17 @@ def conversation_stats(request):
 
     return JsonResponse({'data': data})
 
-def recieve_response(request):
-    return JsonResponse({'data': 'data'})
+@api_view(['POST'])
+def generate_response(request):
+    
+    # lambda_client = boto3.client('lambda')
+    
+    lambda_payload = request.data.get('query')
+    # lambda_client.invoke(
+    #     FunctionName='generateResponse',
+    #     InvocationType = 'RequestResponse',
+    #     Payload=lambda_payload
+    # )
+    
+    r = requests.post("https://pbd7nbp2ymuy6a6mi6jofqjq4q0budsa.lambda-url.us-east-1.on.aws/", params=lambda_payload)
+    return JsonResponse({'data': r})
