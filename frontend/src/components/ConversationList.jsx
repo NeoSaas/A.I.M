@@ -6,13 +6,6 @@ const ConversationList = (props) => {
     const [conversations, setConversations] = useState([]);
     const [filteredConversations, setFilteredConversations] = useState([]);
 
-    //const [selectedConversationId, setSelectedConversationId] = useState(null);
-    //const selectedConversation = conversations.find((convo) => convo.id === selectedConversationId);
-  
-    // const handleConversationClick = (conversationId) => {
-    //     setSelectedConversationId(conversationId);
-    // };
-
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -33,15 +26,9 @@ const ConversationList = (props) => {
 
     useEffect(() => {
         if (props.searchQuery) {
-          const filtered = conversations.filter(convo =>
-            convo &&
-            convo.reamaze_url &&
-            convo.ai_Message &&
-            convo.human_message &&
-            convo.name &&
-            convo.tags &&
-            convo.tags.some(tag => tag.includes(props.searchQuery))
-          );
+            const filtered = conversations.filter(convo =>
+                convo.name && convo.name.toLowerCase().includes(props.searchQuery.toLowerCase())
+            );
             setFilteredConversations(filtered);
         } else {
             setFilteredConversations(conversations);
@@ -51,24 +38,10 @@ const ConversationList = (props) => {
     return (
         <div className="p-4 mx-5">
             {filteredConversations.map(convo => (
-                <Conversation
-                key={convo.id}
-                data={convo}
-                // onConversationClick={handleConversationClick(convo)} // Pass conversation ID to parent component on click
-                />
+                <Conversation key={convo.id} data={convo} />
             ))}
-
-            {/* {selectedConversation && (
-                <ExpandedConversation
-                data={selectedConversation}
-                onClose={() => setSelectedConversationId(null)}  // Reset selectedConversation when closing
-                />
-            )} */}
         </div>
     );
 }
 
-
 export default ConversationList;
-
-

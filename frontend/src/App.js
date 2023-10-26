@@ -16,7 +16,7 @@ function App() {
               [
                 <>
                   <Route path="/admin" element={<AdminPanel setIsAuthenticated={setIsAuthenticated} isAuthenticated={isAuthenticated}/>}/>  
-                  <Route path="/admin/conversation/" element={<ExpandedConversation/>} />
+                  <Route path="/admin/conversation/:convo_id" element={<ExpandedConversation setIsAuthenticated={setIsAuthenticated}/>}/>
                 </>
               ]
               :

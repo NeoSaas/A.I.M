@@ -4,13 +4,11 @@ from django.db import models
 
 class Conversation(models.Model):
     id = models.CharField(max_length=255, unique=True, default="00000000", primary_key=True)
-    name = models.CharField(max_length=255)
-    aidr_response = models.TextField() # name of response
-    prompt = models.TextField() # user input
-    date = models.DateTimeField(auto_now_add=True)
+    messages = models.JSONField()  # Field to store the entire conversation as a list of messages
+    timestamp = models.DateTimeField(auto_now_add=True)  # Timestamp of the conversation
 
     def __str__(self):
-        return self.name
+        return f"Conversation {self.id}"
     
 class ConversationStatistics(models.Model):
     tag = models.CharField(max_length=255, default = "test1")

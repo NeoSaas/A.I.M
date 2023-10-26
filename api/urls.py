@@ -8,7 +8,9 @@ urlpatterns = [
     path('api/logout/', views.logout_view, name='logout'),
     path('api/conversations/', views.conversation_list, name='conversation-list'),
     path('api/get-statistics/', views.conversation_stats, name='conversation-stats'),
-    path('api/generate-response/', views.generate_response, name='response-creation'),
+    path('api/invoke-endpoint/', views.invoke_endpoint, name='response-creation'),
+    path('api/create-conversation-object', views.generate_and_add_conversation, name='add-conversation-model'),
+    path('api/get-conversation', views.get_conversation, name='get-conversation'),
     
 ]
 
