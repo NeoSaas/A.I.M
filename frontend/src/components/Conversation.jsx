@@ -14,8 +14,8 @@ const Conversation = ({ data }) => {
 
   return (
       <div on onClick={handleConversationClick} className="bg-white p-4 rounded-md my-4 dark:bg-slate-600 hover:scale-95 hover:ease-in-out hover:duration-300 scale-100 duration-300 ease-in-out">
-        <p className="text-red-500 mb-2 dark:text-blue-200">Human: mesage number 1</p>
-        <p className="text-black mb-2 dark:text-blue-500">AI: message number 2</p>
+        <p className="text-red-500 mb-2 dark:text-blue-200">Human: {firstMessage}</p>
+        <p className="text-black mb-2 dark:text-blue-500">AI: {firstResponse}</p>
       </div>
     
   );

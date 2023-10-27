@@ -8,6 +8,7 @@ import TopBar from './TopBar';
 
 const ExpandedConversation = (props) => {
   const [conversation, setConversation] = useState([]);
+  const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState('');
   const { convo_id } = useParams();
   const [activeTab, setActiveTab] = useState('conversations');
@@ -16,13 +17,14 @@ const ExpandedConversation = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = axios.get('http://127.0.0.1:8000/api/get-conversation', {
+        const response = await axios.get('http://127.0.0.1:8000/api/get-conversation', {
           params: {
             convo_id: convo_id
           }
         });
         console.log(response);
         setConversation(response.data);
+        setMessages(response.data.messages)
       } catch (error) {
         console.error(error);
       }
@@ -31,24 +33,16 @@ const ExpandedConversation = (props) => {
     fetchData();
   }, [convo_id]);
 
-  const handleClose = async () => {
-    // Handle close logic here
-  };
-
   const handleSendMessage = async () => {
     // Handle sending the message logic here
     // You can send the message to your backend API if needed
   };
-
-  // Extract first two messages from the conversation data
-  const firstMessage = conversation.messages;
-  const secondMessage = conversation.messages;
-  const messageArray = Object.values(conversation.messages);
-  console.log(conversation);
+  console.log(conversation.messages);
   console.log(convo_id);
 
+
   return (
-    <div className="flex h-screen bg-[#FAF9F6] dark:bg-slate-800 text-black dark:text-slate-300">
+    <div className="flex h-full bg-[#FAF9F6] dark:bg-slate-800 text-black dark:text-slate-300">
       <TopBar />
       <nav className="inline-block h-full w-max bg-inherit my-16">
         <ul className="inline-block mx-8 space-x-1 space-y-4 mt-4 w-max">
@@ -71,20 +65,17 @@ const ExpandedConversation = (props) => {
           </li>
         </ul>
       </nav>
-      <div className="flex flex-col flex-1 bg-gradient-to-b from-[#FAF9F6] to-slate-500 dark:bg-gradient-to-b dark:from-[#273d4f] dark:to-slate-900 dark:text-white min-h-screen dark:transition-colors dark:duration-300 transition-colors duration-300 ease-in-out dark:ease-in-out mt-8">
-        <div className="flex-1 flex flex-col relative">
-          <div className="p-4 overflow-y-auto">
-            {/* Display the first two messages of the conversation */}
-            <div className="mb-2 text-left">{firstMessage}</div>
-            <div className="mb-2 text-left">{secondMessage}</div>
+      <div className="flex bg-gradient-to-b from-[#FAF9F6] to-slate-500 dark:bg-gradient-to-b dark:from-[#273d4f] dark:to-slate-900 dark:text-white min-h-screen dark:transition-colors dark:duration-300 transition-colors duration-300 ease-in-out dark:ease-in-out mt-12 w-full">
+        <div className="flex-1 flex flex-col relative h-full">
+          <div className="p-4 overflow-y-auto absolute mt-24 w-full inline-grid grid-flow-row">
             {/* Conversation Area */}
-            {messageArray.slice(2).map((msg, index) => (
-              <div key={index} className={`mb-2 ${msg.sender === 'user' ? 'text-right' : 'text-left'}`}>
+            {messages.map((msg, index) => (
+              <div key={index} className={`mb-4 border rounded-lg p-4 h-16 w-max ${msg.sender === 'user' ? 'ml-auto bg-black text-white dark:text-black dark:bg-slate-300' : 'mr-auto bg-slate-100 dark:bg-slate-900'}`}>
                 {msg.content}
               </div>
             ))}
           </div>
-          <div className="p-4 flex items-center bg-gray-200 dark:bg-gray-700">
+          <div className="p-4 flex items-center bg-[#FAF9F6] dark:bg-slate-800">
             {/* Input Area */}
             <input
               type="text"

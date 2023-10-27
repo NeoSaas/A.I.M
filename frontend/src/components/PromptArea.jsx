@@ -27,6 +27,7 @@ function PromptArea({ onSearch }) {
         },
       };
       const response = await axios.post('http://127.0.0.1:8000/api/invoke-endpoint/', payload);
+      const newConversation = await axios.post('http://127.0.0.1:8000/api/create-conversation-object/', response, values.query)
     } catch (error) {
       console.error(error);
     }

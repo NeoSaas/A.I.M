@@ -6,7 +6,7 @@ import './index.css';
 import ExpandedConversation from './components/ExpandedConversation';
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [isAuthenticated, setIsAuthenticated] = useState(true)
   return (
     <BrowserRouter>
         <Routes>
