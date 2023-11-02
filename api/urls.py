@@ -3,14 +3,14 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('api/bot-action/', views.bot_action, name='bot-action'),
-    path('api/login/', views.login_view, name='login'),
-    path('api/logout/', views.logout_view, name='logout'),
-    path('api/conversations/', views.conversation_list, name='conversation-list'),
-    path('api/get-statistics/', views.conversation_stats, name='conversation-stats'),
-    path('api/invoke-endpoint/', views.invoke_endpoint, name='response-creation'),
-    path('api/create-conversation-object', views.generate_and_add_conversation, name='add-conversation-model'),
-    path('api/get-conversation', views.get_conversation, name='get-conversation'),
-    
+    path('bot-action/', views.bot_action, name='bot-action'),
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout'),
+    path('conversations/', views.conversation_list, name='conversation-list'),
+    path('get-statistics/', views.conversation_stats, name='conversation-stats'),
+    path('invoke-endpoint/', views.invoke_endpoint, name='response-creation'),
+    path('create-conversation-object', views.generate_and_add_conversation, name='add-conversation-model'),
+    path('get-conversation', views.get_conversation, name='get-conversation'),
+    path('conversations/<str:conversation_id>/add_message/', views.add_message_to_conversation, name='append-conversation'),
 ]
 

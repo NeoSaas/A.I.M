@@ -3,7 +3,6 @@ from django.db import models
 # Create your models here.
 
 class Conversation(models.Model):
-    id = models.CharField(max_length=255, unique=True, default="00000000", primary_key=True)
     messages = models.JSONField()  # Field to store the entire conversation as a list of messages
     timestamp = models.DateTimeField(auto_now_add=True)  # Timestamp of the conversation
 

@@ -17,7 +17,7 @@ const ExpandedConversation = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:8000/api/get-conversation', {
+        const response = await axios.get('http://neosaas.net/api/get-conversation', {
           params: {
             convo_id: convo_id
           }
@@ -32,14 +32,33 @@ const ExpandedConversation = (props) => {
 
     fetchData();
   }, [convo_id]);
+  
 
   const handleSendMessage = async () => {
-    // Handle sending the message logic here
-    // You can send the message to your backend API if needed
+    axios.post(`http://neosaas.net/api/conversations/${convo_id}/add_message/`, {
+        content: message,
+        sender: "user",
+      })
+      .then(response => {
+        console.log('Message added successfully:', response.data);
+      })
+      .catch(error => {
+        console.error('Error adding message:', error);
+      });
+    const query = message;
+    const response = await axios.post('http://neosaas.net/api/invoke-endpoint/', {query});
+    const response_payload = response.data["response-payload"]
+    await axios.post(`http://neosaas.net/api/conversations/${convo_id}/add_message/`, {
+        content: response_payload,
+        sender: "bot",
+      })
+      .then(response => {
+        console.log('Message added successfully:', response.data);
+      })
+      .catch(error => {
+        console.error('Error adding message:', error);
+      });
   };
-  console.log(conversation.messages);
-  console.log(convo_id);
-
 
   return (
     <div className="flex h-full bg-[#FAF9F6] dark:bg-slate-800 text-black dark:text-slate-300">
@@ -65,17 +84,17 @@ const ExpandedConversation = (props) => {
           </li>
         </ul>
       </nav>
-      <div className="flex bg-gradient-to-b from-[#FAF9F6] to-slate-500 dark:bg-gradient-to-b dark:from-[#273d4f] dark:to-slate-900 dark:text-white min-h-screen dark:transition-colors dark:duration-300 transition-colors duration-300 ease-in-out dark:ease-in-out mt-12 w-full">
-        <div className="flex-1 flex flex-col relative h-full">
-          <div className="p-4 overflow-y-auto absolute mt-24 w-full inline-grid grid-flow-row">
+      <div className="flex bg-gradient-to-b from-[#FAF9F6] to-slate-500 dark:bg-gradient-to-b dark:from-[#273d4f] dark:to-slate-900 dark:text-white min-h-screen dark:transition-colors dark:duration-300 transition-colors duration-300 ease-in-out dark:ease-in-out mt-0 w-full">
+        <div className="flex-1 flex flex-col relative h-full max-h-screen">
+          <div className="p-4 overflow-y-auto sticky mt-24 w-full inline-grid grid-flow-row">
             {/* Conversation Area */}
             {messages.map((msg, index) => (
-              <div key={index} className={`mb-4 border rounded-lg p-4 h-16 w-max ${msg.sender === 'user' ? 'ml-auto bg-black text-white dark:text-black dark:bg-slate-300' : 'mr-auto bg-slate-100 dark:bg-slate-900'}`}>
+              <div key={index} className={`mb-4 border rounded-lg p-4 h-auto w-max max-w-[100vh] ${msg.sender === 'user' ? 'ml-auto bg-black text-white dark:text-black dark:bg-slate-300' : 'mr-auto bg-slate-100 dark:bg-slate-900'}`}>
                 {msg.content}
               </div>
             ))}
           </div>
-          <div className="p-4 flex items-center bg-[#FAF9F6] dark:bg-slate-800">
+          <div className="p-4 flex items-center bg-[#FAF9F6] dark:bg-slate-800 absolute w-full">
             {/* Input Area */}
             <input
               type="text"

@@ -6,16 +6,17 @@ const ConversationList = (props) => {
     const [conversations, setConversations] = useState([]);
     const [filteredConversations, setFilteredConversations] = useState([]);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await axios.get('http://127.0.0.1:8000/api/conversations/');
-                setConversations(response.data);
-            } catch (error) {
-                console.error(error);
-            }
-        };
+    
+    const fetchData = async () => {
+        try {
+            const response = await axios.get('http://neosaas.net/api/conversations/');
+            setConversations(response.data);
+        } catch (error) {
+            console.error(error);
+        }
+    };
 
+    useEffect(() => {
         fetchData();
         const interval = setInterval(fetchData, 100000);
 

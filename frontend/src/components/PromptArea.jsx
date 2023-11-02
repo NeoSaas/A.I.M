@@ -21,13 +21,10 @@ function PromptArea({ onSearch }) {
 
   const handleQuerySend = async (values) => {
     try {
-      const payload = {
-        inputs: {
-          query: values.query,
-        },
-      };
-      const response = await axios.post('http://127.0.0.1:8000/api/invoke-endpoint/', payload);
-      const newConversation = await axios.post('http://127.0.0.1:8000/api/create-conversation-object/', response, values.query)
+      const query = values.query
+      const response = await axios.post('http://neosaas.net/api/invoke-endpoint/', values);
+      const response_payload = response.data["response-payload"]
+      await axios.post('http://neosaas.net/api/create-conversation-object', {response_payload, query})
     } catch (error) {
       console.error(error);
     }

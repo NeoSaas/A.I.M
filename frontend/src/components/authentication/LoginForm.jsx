@@ -20,7 +20,7 @@ function LoginForm({ setIsAuthenticated }) {
 
     const handleSubmit = async (values) => {
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/login/', values);
+            const response = await axios.post('http://neosaas.net/api/login/', values);
             if (response.hasOwnProperty('data')) {
                 console.log(response.data);
                 setIsAuthenticated(true);

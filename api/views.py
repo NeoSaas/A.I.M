@@ -66,22 +66,23 @@ def get_conversation(request):
 def generate_and_add_conversation(request):
     # Create a new conversation
     message_array = {
-        [
+        "messages": [
             {
-                "index":"2",
-                "sender":"bot",
+                "index":"0",
+                "sender":"user",
                 "content":request.data.get('query')
             },
             {
-                "index":"2",
+                "index":"1",
                 "sender":"bot",
-                "content":request.data.get('response')
+                "content":request.data.get('response_payload')
             }
         ]
     }
+
     
     new_conversation = Conversation(
-        messages=message_array,
+        messages=message_array['messages'],
     )
     new_conversation.save()
     serializer = ConversationSerializer(new_conversation)
@@ -89,13 +90,26 @@ def generate_and_add_conversation(request):
     return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 @api_view(['POST'])
-def append_conversation(request):
+def add_message_to_conversation(request, conversation_id):
+    try:
+        conversation = Conversation.objects.get(id=conversation_id)
+        existing_messages = conversation.messages
+        
+        new_message = {
+            "index": str(len(existing_messages)),  
+            "sender": request.data.get('sender'),  
+            "content": request.data.get('content')  
+        }
+        
+        existing_messages.append(new_message)
+        conversation.messages = existing_messages
+        conversation.save()
+        
+        serializer = ConversationSerializer(conversation)
+        return Response(serializer.data, status=status.HTTP_200_OK)
     
-    
-    
-    conversation = Conversation.objects.filter(id=request.data.get('convo_id')).first()
-    
-    return Response()
+    except Conversation.DoesNotExist:
+        return Response({"error": "Conversation not found"}, status=status.HTTP_404_NOT_FOUND)
 
 def conversation_stats(request):
     call_command('calc_stats')
@@ -119,15 +133,17 @@ def invoke_endpoint(request):
     t = datetime.datetime.utcnow()
     amz_date = t.strftime('%Y%m%dT%H%M%SZ')
     date_stamp = t.strftime('%Y%m%d')
+    dhash = hashlib.md5()
     
-    input = request.data.get('query','')
-    lambda_payload = { 
-            "query": input,    
-    }
+    input = request.data.get('query')
+    # lambda_payload = { 
+    #         query: input,    
+    # }
     
-    request_parameters =  '{'
-    request_parameters +=  '"query": "make me a sandwich recipe'
-    request_parameters +=  '}'
+    request_parameters =  f'"{input}"'
+    print(request_parameters)
+    query_payload = json.dumps(request_parameters, sort_keys=True).encode('utf-8')
+    dhash.update(query_payload)
     
     def sign(key, msg):
         return hmac.new(key, msg.encode("utf-8"), hashlib.sha256).digest()
@@ -145,6 +161,7 @@ def invoke_endpoint(request):
     signed_headers = 'content-type;host;x-amz-date;x-amz-target'
     payload_hash = hashlib.sha256(request_parameters.encode('utf-8')).hexdigest()
     canonical_request = method + '\n' + canonical_uri + '\n' + canonical_querystring + '\n' + canonical_headers + '\n' + signed_headers + '\n' + payload_hash
+    
     # ************* TASK 1: CREATE THE STRING TO SIGN*************
     algorithm = 'AWS4-HMAC-SHA256'
     credential_scope = date_stamp + '/' + region + '/' + service + '/' + 'aws4_request'
@@ -162,12 +179,12 @@ def invoke_endpoint(request):
         'Authorization':authorization_header
     }
     
-    payload_bytes = json.dumps(lambda_payload).encode('utf-8')
-    r = requests.post(endpoint, data=request_parameters, headers=headers)
+    # payload_bytes = json.dumps(lambda_payload).encode('utf-8')
+    r = requests.post(endpoint, headers=headers, data=request_parameters)
     # response_payload = r.json()
     print(r.text)
     print(r.status_code)
     # response_payload_parsed = json.loads(response_payload)
-    # requests.post('http://127.0.0.1:8000/api/create-conversation-object', response_payload[0][0], input)
+    # requests.post('http://neosaas.net/api/create-conversation-object', response_payload[0][0], input)
     
     return JsonResponse({'response-payload': r.text})
