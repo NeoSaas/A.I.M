@@ -17,7 +17,7 @@ const ExpandedConversation = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://neosaas.net/api/get-conversation', {
+        const response = await axios.get('http://127.0.0.1:8000/api/get-conversation', {
           params: {
             convo_id: convo_id
           }
@@ -35,7 +35,7 @@ const ExpandedConversation = (props) => {
   
 
   const handleSendMessage = async () => {
-    axios.post(`http://neosaas.net/api/conversations/${convo_id}/add_message/`, {
+    axios.post(`http://127.0.0.1:8000/api/conversations/${convo_id}/add_message/`, {
         content: message,
         sender: "user",
       })
@@ -46,11 +46,11 @@ const ExpandedConversation = (props) => {
         console.error('Error adding message:', error);
       });
     const query = message;
-    const response = await axios.post('http://neosaas.net/api/invoke-endpoint/', {query});
+    const response = await axios.post('http://127.0.0.1:8000/api/OPAIInference/', {query, convo_id});
     const response_payload = response.data["response-payload"]
-    await axios.post(`http://neosaas.net/api/conversations/${convo_id}/add_message/`, {
+    await axios.post(`http://127.0.0.1:8000/api/conversations/${convo_id}/add_message/`, {
         content: response_payload,
-        sender: "bot",
+        sender: "assistant",
       })
       .then(response => {
         console.log('Message added successfully:', response.data);
@@ -72,7 +72,7 @@ const ExpandedConversation = (props) => {
                 ? 'my-5 py-6 hover:-translate-y-1 hover:scale-100 ease-in-out duration-300'
                 : 'my-5 py-6 hover:-translate-y-1 hover:scale-100 ease-in-out duration-300'
             }`}
-            onClick={() => nav(`/admin`)}
+            onClick={() => nav(`/aidr`)}
           >
             <BsFillChatLeftTextFill size={38} className="inline-flex" />
           </li>

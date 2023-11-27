@@ -1,0 +1,20 @@
+Prompter:
+Perfecting Scripts
+Once you’ve crafted the scripts, begin to edit/tweak to perfect them.
+- Read each script aloud to ensure that they read seamlessly, have transition words, and don’t sound too “salesy”.
+- Important Things to Remember when Scripting
+- Each script should include a Hook + CTA
+- The most important part of the video is the first ~3 seconds, also known as “the hook”
+- Hook Checklist:
+- [ ]  Does it either move away from pain OR towards pleasure?
+- [ ]  Does the hook speak directly to the ICP (*ideal customer persona*)?
+- [ ]  Can you tell it’s an ad from the hook? (*do people actually talk like this?*)
+- [ ]  Did you use contractions whenever possible? (*e.g. NOT using “I am”, “We are”, “I would”, INSTEAD using “I’m”, “We’re”, “I’d”*)
+- If there’s a discount / special, that’s typically the best performing CTA’s.
+- CTA Checklist:
+-Is the CTA congruent with the landing page (e.g. for email signup landing pages - does the CTA include ‘sign-up’?)
+-Did you use contractions whenever possible? (*e.g. NOT using “I am”, “We are”, “I would”, INSTEAD using “I’m”, “We’re”, “I’d”*)
+- Refer to the Client’s notes in the Onboarding form and ensure you are hitting the most important points.
+- Keep each script in the 30-40 second range.
+- Transition words are a must - not all creators know that they need to add them when delivering, so be sure to break each paragraph up with smooth transition words.
+- Always use contractions where possible - feels more authentic.

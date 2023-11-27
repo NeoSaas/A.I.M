@@ -1,0 +1,12 @@
+Prompter:
+This is a successful ad script for a skincare brand.
+"This is my hair a couple months ago. It was shedding like crazy and just not looking good at all. I was starting to get some bald spots, and I was feeling very insecure. This is my hair now. There's a lot of hair growth happening, and I'm so happy about it.
+These are the things that I'm doing to maintain a healthier hair journey. The Ouai's hair serum that skincare to your scalp.
+I’m going to tell you about my product, and them I’d like you to rewrite the script in the context of my product, okay?
+———
+[Clearly Basics] makes effective yet gentle skincare for anyone with acne or sensitive skin to feel a little less lost & a lot more confident. Results come from formulation science, focus, and education. At Clearly Basics, you can relax knowing your skin is in good hands.
+Clear Out clarifying lotion penetrates deep into the skin to eliminate impurities and imperfections while refining and resurfacing your skin to reveal your smoother, radiant and more balanced complexion.
+System:
+This was my skin a couple of months ago. It was covered in acne, and I was feeling really insecure about it. I tried everything to clear it up, but nothing seemed to work. Then I found Clearly Basics and their Clear Out clarifying lotion. This stuff is a game-changer.
+It penetrates deep into the skin to eliminate impurities and imperfections while refining and resurfacing your skin to reveal a smoother, more radiant, and balanced complexion. I apply it before bed and wake up with clearer, more glowing skin.
+I've tried so many products, but Clearly Basics is the only one that works for me. I finally feel confident in my own skin. If you struggle with acne or sensitive skin, don't give up hope. Try Clearly Basics and their Clear Out clarifying lotion. Your skin will thank you.

@@ -14,6 +14,7 @@ import json
 from boto3 import Session
 from requests_aws4auth import AWS4Auth
 import sys, os, base64, datetime, hashlib, hmac 
+from openai import OpenAI
 
 def index(request):
     tag_to_monitor = 'your_tag_name'
@@ -74,7 +75,7 @@ def generate_and_add_conversation(request):
             },
             {
                 "index":"1",
-                "sender":"bot",
+                "sender":"assistant",
                 "content":request.data.get('response_payload')
             }
         ]
@@ -136,12 +137,8 @@ def invoke_endpoint(request):
     dhash = hashlib.md5()
     
     input = request.data.get('query')
-    # lambda_payload = { 
-    #         query: input,    
-    # }
     
     request_parameters =  f'"{input}"'
-    print(request_parameters)
     query_payload = json.dumps(request_parameters, sort_keys=True).encode('utf-8')
     dhash.update(query_payload)
     
@@ -178,13 +175,43 @@ def invoke_endpoint(request):
         'X-Amz-Date':amz_date,
         'Authorization':authorization_header
     }
-    
-    # payload_bytes = json.dumps(lambda_payload).encode('utf-8')
+
     r = requests.post(endpoint, headers=headers, data=request_parameters)
-    # response_payload = r.json()
-    print(r.text)
-    print(r.status_code)
-    # response_payload_parsed = json.loads(response_payload)
-    # requests.post('http://neosaas.net/api/create-conversation-object', response_payload[0][0], input)
-    
     return JsonResponse({'response-payload': r.text})
+
+@api_view(['POST'])
+def OPAIEndpointExisting(request):
+    client = OpenAI(organization='org-2oZsacQ1Ji3Xr0uveLpwg50m', api_key='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')
+    conversation = Conversation.objects.filter(id=request.data.get('convo_id'))
+    
+    convo_messages = conversation[0].messages
+    messages = []
+    
+    for message in convo_messages:
+        lines_message = {"role": message.get('sender'), "content": message.get('content')}
+        messages.append(lines_message)
+    
+    user_message = {"role": "user", "content": request.data.get('query')}
+    messages.append(user_message)
+    
+    response = client.chat.completions.create(
+        model="ft:gpt-3.5-turbo-1106:personal::8Lj9L3WV",
+        messages=messages
+    )
+    
+    return JsonResponse({'response-payload': response.choices[0].message.content})
+
+
+@api_view(['POST'])
+def OPAIEndpointCreate(request):
+    client = OpenAI(organization='org-2oZsacQ1Ji3Xr0uveLpwg50m', api_key='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')
+    
+    response = client.chat.completions.create(
+        model="ft:gpt-3.5-turbo-1106:personal::8Lj9L3WV",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant. Your main job is creative direction. I.e. the creation of video scripts and skits as well as ads for products"},
+            {"role": "user", "content": f"{request.data.get('query')}"}
+        ]
+    )
+    print(response.choices[0].message.content)
+    return JsonResponse({'response-payload': response.choices[0].message.content})

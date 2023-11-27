@@ -12,5 +12,7 @@ urlpatterns = [
     path('create-conversation-object', views.generate_and_add_conversation, name='add-conversation-model'),
     path('get-conversation', views.get_conversation, name='get-conversation'),
     path('conversations/<str:conversation_id>/add_message/', views.add_message_to_conversation, name='append-conversation'),
+    path('OPAICreateConvo/', views.OPAIEndpointCreate, name='OPAI-create'),
+    path('OPAIInference/', views.OPAIEndpointExisting, name='Inference'),
 ]
 

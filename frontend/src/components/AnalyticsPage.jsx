@@ -9,7 +9,7 @@ function AnalyticsPage() {
   const [chartData, setChartData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://neosaas.net/api/get-statistics/')
+    axios.get('http://127.0.0.1:8000/api/get-statistics/')
       .then((response) => {
         setChartData(response.data.data);
       })

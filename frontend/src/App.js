@@ -15,15 +15,15 @@ function App() {
             isAuthenticated ? 
               [
                 <>
-                  <Route path="/admin" element={<AdminPanel setIsAuthenticated={setIsAuthenticated} isAuthenticated={isAuthenticated}/>}/>  
-                  <Route path="/admin/conversation/:convo_id" element={<ExpandedConversation setIsAuthenticated={setIsAuthenticated}/>}/>
+                  <Route path="/aidr" element={<AdminPanel setIsAuthenticated={setIsAuthenticated} isAuthenticated={isAuthenticated}/>}/>  
+                  <Route path="/aidr/conversation/:convo_id" element={<ExpandedConversation setIsAuthenticated={setIsAuthenticated}/>}/>
                 </>
               ]
               :
               null
           }
           <Route path={"*"} element={ <Login setIsAuthenticated={setIsAuthenticated}/>}/>
-          {/* <ProtectedRoute path="/admin" element={<AdminPanel/>} isAuthenticated={isAuthenticated}/> */}
+          {/* <ProtectedRoute path="/aidr" element={<AdminPanel/>} isAuthenticated={isAuthenticated}/> */}
         </Routes>
     </BrowserRouter>
   );

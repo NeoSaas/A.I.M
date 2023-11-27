@@ -9,7 +9,7 @@ const Conversation = ({ data }) => {
   
   const handleConversationClick = async (values) => {
     const id = data.id;
-    nav(`/admin/conversation/${id}`);
+    nav(`/aidr/conversation/${id}`);
   }
 
   return (

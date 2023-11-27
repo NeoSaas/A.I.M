@@ -1,0 +1,10 @@
+User:
+Choose 4 script frameworks for each UGC Brief
+- UGC Factory’s Core Framework Steps
+- Hooks (aka Attention-Grabber / Bold Claim)
+- Testimonial (aka Personal Story)
+- Problems (aka Pain Points)
+- Solution / Benefit / Objection Handling
+- Product / Key Selling Points
+- Comparison (bad alternative / competitor)
+- CTA / Offer

@@ -1,0 +1,290 @@
+User:
+The following is an example oboarding form we use
+Name-
+Dani Marie
+Primary Demographic
+- Millennial Melanie
+- Women
+- Aged 26 - 35
+- Dress size 14 - 26
+- Tech savvy
+- Shops online every month
+- Interested in fashion and looks for inspiration from others
+- Has been plus size her whole life and accepting her body
+- Works from home
+Secondary Demographic
+- Sophisticated Sandra
+- Aged 36 - 54
+- Dress size 14 - 26
+- Her weight fluctuates
+- Shops in store and online Works in the office and from home
+- Loves socialising with friends and hosting family events
+- Enjoys getting dressed up and making an effort
+Pain Points
+- Our customer often has low confidence and is unsure how an item will look
+- Weight fluctuates and doesn’t want to buy something in case she loses weight
+- Doesn’t know about smaller indie plus size brands
+- Low quality fabric - she doesn’t always trust new brands because of fabric quality.
+Fears
+- Our customer often has low confidence and is unsure how an item will look
+- Weight fluctuates and doesn’t want to buy something in case she loses weight
+- Doesn’t know about smaller indie plus size brands
+- Low quality fabric - she doesn’t always trust new brands because of fabric quality.
+Goals
+- Our customer often has low confidence and is unsure how an item will look
+- Weight fluctuates and doesn’t want to buy something in case she loses weight
+- Doesn’t know about smaller indie plus size brands
+- Low quality fabric - she doesn’t always trust new brands because of fabric quality.
+Competitors
+- Eloquii
+- City Chic
+- Standards & Practices
+- Anthropologie
+- Torrid
+- Lane Bryant
+Goals copy (What are the target demographics trying to achieve, What are the target demographic's hopes and dreams for themselves, What roadblocks are faced by the target demographics):
+- Our customer often has low confidence and is unsure how an item will look
+- Weight fluctuates and doesn’t want to buy something in case she loses weight
+- Doesn’t know about smaller indie plus size brands
+- Low quality fabric - she doesn’t always trust new brands because of fabric quality.
+
+now that you know the script id like you to generate a few example ones with fake data
+Assistant:
+Name
+Sellers Shield
+Primary Demographic
+- Real estate agents & real estate brokers.
+- We're primarily interested in higher volume agents who represent sellers + their brokers.
+- These agents are primarily mid to late career females (40+).
+- They tend to focus a lot and spend a lot of money on their personal brand/image - nice cars, nice clothes, and age attractive.
+- The brokers who own the brokerages tend to be high-net worth males with similar character traits - nice cars, clothes, and in shape....personable alpha-type personalities are common.
+- Despite earning high salaries, they all tend to live paycheck to paycheck, spending what they earn & not saving much.
+- Realtors tend to view themselves as entrepreneurs and tend to invest a lot in motivational coaches/speakers & self-help gurus.
+- They're also extremely heavy users of social media - both for business and personal reasons, and I believe they're drawn to influencers that appear to be successful (and a little younger than they are).
+Secondary Demographic
+- The home seller themselves.
+- We haven't targeted this market yet, but we have very good data on who recently sold their homes in markets that are attractive to us.
+- The most attractive audience for us on sellers are higher earners and/or high net worth home sellers.
+- They might have built up equity in their homes & don't want to be bothered by problems with their home after they sell it.
+- I think the two big buckets are transient homeowners who move to new cities for work after a few years and retirees looking to down-size after their kids move out.
+Pain Points
+- Agents are mostly concerned about not losing a current client, and second to that is getting new clients.
+- They spend so much time prospecting & often only convert about 2% of their leads to clients, so once they get a client, they're very worried about someone involved in the deal screwing the deal up.
+- The hard part for them is discerning what makes their life better, because they're sales people, not operators.
+- They also get their best clients from referrals, so they don't want a deal that closes to be a bad experience for their clients, or they risk future referrals....though this is less important than losing any current deal.
+- Brokers are focused on their broker profitability and reputation.  They've been in real estate a long time typically and get a lot of business through word of mouth referrals.
+- They also pay a lot in what's called E&O insurance (errors and omissions) - about $5K per agent that works for them per year.
+Fears
+- Agents
+- afraid of failing and having to get a 9-5 job.
+- For the top performers, they're worried their lead volume might dry up or go somewhere else.
+- It would be embarrassing for a good agent to not know something that their client knows about real estate, or their client thinks they should 	  know about real estate.
+- For brokers, they're typically making almost all their money off their own sales, even though they might have 10, 20, 40 agents that work for them.
+- The cost and people management overhead is a drag, and it's not very profitable for most brokers.
+- They want to avoid anything that will destroy the reputation of their whole brokerage.
+Goals
+1) Most good agents want to be mega rich without having to work hard.  We call it the maserati mindset.  Max cash with min effort.  You tend to want other realtors to know how successful you are as well.  Desire for peer appreciation is very high, and the junior ranks really idolize top industry performers.
+2) Lack of training & accountability are the biggest roadblocks, because they're all 1099, which makes it harder for anyone to hold them accountable for sales activities that you'd see in a corporation.  So agents have to be self-motivated without oversight to succeed.  Also, real estate training is a big profit engine in the industry, so agents can't get unbiased advice on training, so they don't know what can/can't be trusted in the advice they get.  Lastly, unlike sales pros in other industries, the agents typically have to choose and manage all their own services and tools - how to get leads, where to buy them, what crm to put them in, what campaigns to build to communicate to them, phone services, accounting and tax services, etc.  It's overwhelming.
+3) See above.  They have to have/use tools that any competitive sales industry would need, but it's hard to cut through the clutter on what crm's, call screening services, mileage tracking tools, mls services, lead gen services, etc would work best for you.  To put a bow on this, 90% of agents usually fail out of the industry in their first 2 years after getting their license, so those that make it to the top of the industry and are targets for Sellers Shield service are in the small minority.
+Solution
+1) Reduces deal friction - the agent can email their client a link to fill out their sellers disclosure form on Sellers Shield rather than a fillable PDF or printed document.  Sellers Shield will also let the agent know when the client has completed the form, saving the agent time & energy.
+2) Avoids E&O risk - agents are constantly reminded by their brokers not to answer any questions about the sellers disclosure form, because it puts their brokerage in legal jeopardy.  But agents feel bad sitting with a client and not answering their questions or offering any value.  Sellers Shield actually offers advice through the process and helps the clients answer the questions in a way that reduces their risk by almost 90%, including word selection that is less likely to cause legal risks later.  So agents not only spend less time with clients on this part of the legal documentation of selling their home, they also provide better service for their clients vs traditional sellers disclosure form options.
+Key Benefits
+1) It's effective at saving time for agents and measurably reduces risk for clients and brokers.
+2) The only competitor in the industry was recently acquired by a large brokerage (Compass Real Estate) and no longer offers their service to non-Compass agents.
+Competitors
+None really.  The current competitors are fillable PDF's that don't/can't offer legal advice on the process.
+Market Alternatives
+None of the alternatives reduce lawsuit risks from the current levels, and they usually require a bigger time commitment from agents, and the deeper time commitment increases the agent's/broker's legal risk.  So really an agent wants to make sure that the sellers disclosure form gets filled out as quickly as possible, so they can represent the client.  If that can happen quickly without their involvement, they're very happy, and the client is better off.  Our problem is awareness - not all agents know about the service (because it's relatively new) & education - because agents are typically distrustful of new services that might screw up their deals.
+Brand Highlights
+Our mission is to put an end to real estate lawsuits
+Our founder spent 30 years representing agents in real estate lawsuits before launching Sellers Shield to reduce sellers disclosure lawsuits, which is the most common part of the transaction that leads to legal disputes.
+So we know what elements of the sellers disclosure form are likely to lead to legal disputes, and we've built our form guidance around fixing those areas for each client before they become a problem.
+Key Talking Points
+We prevent 88% of sellers disclosure lawsuits
+It saves them time and is more convenient than their current sellers disclosure process
+It delivers better legal advice to their clients than their allowed to provide
+Past Creative
+Already shared.  More video content recently shot for the Viewpoint interview we were telling you about that I'll ask Ben to send over.
+Brand Personality
+Trustworthy, Authoritative, Professional, Reliable
+Brand Guidelines
+No attachments
+Raw Assets
+Testimonials
+Goals copy
+1) Most good agents want to be mega rich without having to work hard.  We call it the maserati mindset.  Max cash with min effort.  You tend to want other realtors to know how successful you are as well.  Desire for peer appreciation is very high, and the junior ranks really idolize top industry performers.
+2) Lack of training & accountability are the biggest roadblocks, because they're all 1099, which makes it harder for anyone to hold them accountable for sales activities that you'd see in a corporation.  So agents have to be self-motivated without oversight to succeed.  Also, real estate training is a big profit engine in the industry, so agents can't get unbiased advice on training, so they don't know what can/can't be trusted in the advice they get.  Lastly, unlike sales pros in other industries, the agents typically have to choose and manage all their own services and tools - how to get leads, where to buy them, what crm to put them in, what campaigns to build to communicate to them, phone services, accounting and tax services, etc.  It's overwhelming.
+3) See above.  They have to have/use tools that any competitive sales industry would need, but it's hard to cut through the clutter on what crm's, call screening services, mileage tracking tools, mls services, lead gen services, etc would work best for you.  To put a bow on this, 90% of agents usually fail out of the industry in their first 2 years after getting their license, so those that make it to the top of the industry and are targets for Sellers Shield service are in the small minority.
+
+Name
+The American Boxer
+Website
+www.theamericanboxer.com (WIP - holding page. Live Jan 20th)
+Product Description
+Skincare system to train your skin
+Primary Demographic
+- Primary Consumer Profile: The Skincare Savvy
+- Age: 28-65 years old
+- Gender: Male skew, but with female affinity for gifting (and use)
+- Brand Affinities: Nike, Apple, Tesla (premium, innovative, stand for something)
+- Income: $70K+
+- Psychographic: Ambitious. Wired towards self improvement across physical fitness, business/career, diet, mindful hacks.
+- Category Affinity: Engaged in the skincare category but hungry for a bold, premium lifestyle brand that is 'for me'. Embraces smart, simple hacks
+Secondary Demographic
+-Secondary Consumer Profile: The Skincare Curious
+- Similar demographic profile to the above, but not yet so engaged in the skincare category beyond ad hoc basics.
+- This audience knows that they need to up level their skincare game and open to an aspirational, simple and smart solution.
+Pain Points
+- Appearance: My skin looks sub par: dry, lined, blemished
+- Age: I'm not getting any younger - my skin is in a constant battle
+Social pressure: I need to look my best / young (for relationships, meetings)
+Feeling: My skin feels terrible - dry, itchy (vs. smooth, even, supple)
+Knowledge- Where do I begin? So many choices/complexity in skincare space
+Fears
+Fears
+Stigma- Skincare isn't something real men do, makes me less of a man, weak
+Aging- I don't look as young as I used to, I'm getting old!
+Low self esteem: I look like a schlub, old and tired - not as good as others
+Failure- I won't get a great job or a beautiful partner if I have bad skin
+Embarrassing Scenario-
+Showing up for a zoom call looking like an old newspaper
+Goals
+Goals- Stay young: Look and feel youthful. Success: In their work, relationships
+Roadblocks: Lack of knowledge - what to do and how to do it. Social acceptance - how to express skincare without feeling/looking weak
+Skills, Products, Services: A simple, effective, easy to follow, time efficient routine for great skin
+Solution
+Success- Helps consumers look and feel great
+Self Esteem- I'm training my skin (this isn't weak, self indulgent or 'feminine')
+Lack of knowledge- Makes skincare accessible, easy to use
+Great skin: Our products clean, hydrate and protect your skin
+Key Benefits
+I Save Time- Simple, effective 'Train Your Skin' system
+I Look & Feel Great: Youthful skin
+I'm Inspired- Aspirational lifestyle brand, Created for Contenders
+Competitors
+Human Race
+Similar- 3 step program
+Bad: No clear product benefit story, androgynous / trying to be all things to all people.
+Kiehls
+Similar- Similar product offerings, mid to premium products. Men's line
+What's bad: No brand personality, feels like a drug store, complexity - too much to choose from. Speak to men with female oriented approach
+Aesop
+Similar- Premium design aesthetic, strong products & product family themes
+What's bad: Elitist, too high brow, not inclusive, very clinical, not engaging
+Market Alternatives
+Alternative Channel- Drug store brands - cheaper, more accessible
+What's bad: Variable product quality, no brand experience, zero aspiration - purely transactional commodities, 'cheap' / mass market
+Alternative Channel- High end department store brands - elitist, too much complexity, no brand connection, female oriented, over priced
+Brand Highlights
+makes great skin simple
+Slick design, really premium look and feel - you want it on your counter
+Cool brand concept - inspires me to train my skin like I train everything else
+Key Talking Points
+What should you mention-
+New skincare system, Train Your Skin
+Daily practice, training regimen
+Benefits, look great, feel great
+Cool brand, every touchpoint is slick, visceral, premium - packaging, website, content...
+What should you avoid:
+Drug related claims.
+Past Creative
+No creative in market - can share links of brand content as follow up
+Brand Personality
+Bold, stylish, strong, cool, classic
+Brand Guidelines
+TAB Overview CONFIDENTIAL 12.30.21.pdf
+Raw Assets
+Testimonials
+N/A - TBD
+Goals copy
+Goals- Stay young: Look and feel youthful. Success: In their work, relationships
+Roadblocks- Lack of knowledge - what to do and how to do it. Social acceptance - how to express skincare without feeling/looking weak
+Skills, Products, Services: A simple, effective, easy to follow, time efficient routine for great skin
+User:
+now id like you to just generate a single one 
+Assistant:
+Name
+The American Boxer
+Website
+www.theamericanboxer.com (WIP - holding page. Live Jan 20th)
+Product Description
+Skincare system to train your skin
+Primary Demographic
+- Primary Consumer Profile: The Skincare Savvy
+- Age: 28-65 years old
+- Gender: Male skew, but with female affinity for gifting (and use)
+- Brand Affinities: Nike, Apple, Tesla (premium, innovative, stand for something)
+- Income: $70K+
+- Psychographic: Ambitious. Wired towards self improvement across physical fitness, business/career, diet, mindful hacks.
+- Category Affinity: Engaged in the skincare category but hungry for a bold, premium lifestyle brand that is 'for me'. Embraces smart, simple hacks
+Secondary Demographic
+-Secondary Consumer Profile: The Skincare Curious
+- Similar demographic profile to the above, but not yet so engaged in the skincare category beyond ad hoc basics.
+- This audience knows that they need to up level their skincare game and open to an aspirational, simple and smart solution.
+Pain Points
+- Appearance: My skin looks sub par: dry, lined, blemished
+- Age: I'm not getting any younger - my skin is in a constant battle
+Social pressure: I need to look my best / young (for relationships, meetings)
+Feeling: My skin feels terrible - dry, itchy (vs. smooth, even, supple)
+Knowledge- Where do I begin? So many choices/complexity in skincare space
+Fears
+Fears
+Stigma- Skincare isn't something real men do, makes me less of a man, weak
+Aging- I don't look as young as I used to, I'm getting old!
+Low self esteem: I look like a schlub, old and tired - not as good as others
+Failure- I won't get a great job or a beautiful partner if I have bad skin
+Embarrassing Scenario-
+Showing up for a zoom call looking like an old newspaper
+Goals
+Goals- Stay young: Look and feel youthful. Success: In their work, relationships
+Roadblocks: Lack of knowledge - what to do and how to do it. Social acceptance - how to express skincare without feeling/looking weak
+Skills, Products, Services: A simple, effective, easy to follow, time efficient routine for great skin
+Solution
+Success- Helps consumers look and feel great
+Self Esteem- I'm training my skin (this isn't weak, self indulgent or 'feminine')
+Lack of knowledge- Makes skincare accessible, easy to use
+Great skin: Our products clean, hydrate and protect your skin
+Key Benefits
+I Save Time- Simple, effective 'Train Your Skin' system
+I Look & Feel Great: Youthful skin
+I'm Inspired- Aspirational lifestyle brand, Created for Contenders
+Competitors
+Human Race
+Similar- 3 step program
+Bad: No clear product benefit story, androgynous / trying to be all things to all people.
+Kiehls
+Similar- Similar product offerings, mid to premium products. Men's line
+What's bad: No brand personality, feels like a drug store, complexity - too much to choose from. Speak to men with female oriented approach
+Aesop
+Similar- Premium design aesthetic, strong products & product family themes
+What's bad: Elitist, too high brow, not inclusive, very clinical, not engaging
+Market Alternatives
+Alternative Channel- Drug store brands - cheaper, more accessible
+What's bad: Variable product quality, no brand experience, zero aspiration - purely transactional commodities, 'cheap' / mass market
+Alternative Channel- High end department store brands - elitist, too much complexity, no brand connection, female oriented, over priced
+Brand Highlights
+makes great skin simple
+Slick design, really premium look and feel - you want it on your counter
+Cool brand concept - inspires me to train my skin like I train everything else
+Key Talking Points
+What should you mention-
+New skincare system, Train Your Skin
+Daily practice, training regimen
+Benefits, look great, feel great
+Cool brand, every touchpoint is slick, visceral, premium - packaging, website, content...
+What should you avoid:
+Drug related claims.
+Past Creative
+No creative in market - can share links of brand content as follow up
+Brand Personality
+Bold, stylish, strong, cool, classic
+Brand Guidelines
+TAB Overview CONFIDENTIAL 12.30.21.pdf
+Raw Assets
+Testimonials
+N/A - TBD
+Goals copy
+Goals- Stay young: Look and feel youthful. Success: In their work, relationships
+Roadblocks- Lack of knowledge - what to do and how to do it. Social acceptance - how to express skincare without feeling/looking weak
+Skills, Products, Services: A simple, effective, easy to follow, time efficient routine for great skin

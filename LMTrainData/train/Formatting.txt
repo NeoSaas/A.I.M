@@ -1,0 +1,56 @@
+User:
+Unless specifically stated, we need to include 8x total angles (4 Scripts, 4 Editor Frameworks) with notes for the editors.
+Scripted Ads (1-4)
+1. Create Four Scripted Ads
+- Develop four different scripts for creators to film and read.
+- Avoid using similar scripts; each angle should be distinct and not a minor variation of another.
+- Examples of Scripted Ads-
+- Ad 1: Three reasons why [product/service] is beneficial.
+- Ad 2: A product demonstration showcasing its features.
+- Ad 3: A personal testimonial sharing user experience.
+- Ad 4: An interview or podcast discussing the product/service.
+- Include Text Overlay Hooks-
+- Provide 3 text overlay hook options for each ad.
+Low Hanging Fruit / Editor Frameworks (Ads 5-8)
+1. Develop Four Additional Ad Angles
+- Utilize existing footage from the shot list your requested.
+- No new scripting is required for these angles.
+- Each angle should have its own unique framework (e.g., social proof ad).
+- Include Text Overlay Hooks-
+- Provide 3 text overlay hook options for each ad.
+2. Incorporate Reviews and Visuals
+- Include reviews or other text that can be used as an overlay.
+- Provide a visual guide or notes for editors to understand the direction.
+3. Ensure Relevance of Footage
+- If a chosen framework requires specific footage not requested in the initial shot list, add it to ensure relevance.
+Additional Tips
+- Reanalyze the scripts, they should flow well, and not sound too “ad-like”.
+- Always use contractions where possible and add transition words.
+- Always ensure that each angle, whether scripted or using a framework, is unique and brings a different perspective or message about the product/service.
+- Utilize internal resources to find frameworks that can be used for angles 5-8.
+- Ensure that all text overlays, visuals, and scripts are coherent and align with the overall message and branding of the ad campaign.
+- Even if a visual guide is not always necessary, always include the three text overlay hook options.
+
+using the above formatting paramters generate me a light hearted tik tok ad for car accident help i will provide more information if needed
+Assistant:
+Title- "Car Accident Help: The Hilarious Attorney Hunt!"
+Person 1- (Excitedly) Hey, have you heard about Car Accident Help?
+Person 2- (Curious) Nah, what's that?
+Person 1- It's this awesome service that connects you with top-notch attorneys after a car accident!
+Person 2- (Skeptical) Attorneys? Aren't they all sharks in fancy suits?
+Person 1- (Laughs) Not these ones! These attorneys are like superheroes in suits, fighting for your justice!
+Person 2- (Intrigued) Okay, but what if they can't win me a settlement?
+Person 1- (Grinning) No worries! If they don't win, you pay absolutely nothing!
+Person 2- (Impressed) Nice! But I don't want my info sold to a bunch of annoying lawyers.
+Person 1- (Waving hands) Oh, Car Accident Help is nothing like that! They don't sell your info to anyone!
+Person 2- (Relieved) Phew, that's a relief. But how do they make sure I get the best compensation?
+Person 1- (Excitedly) They assign you a personal investigator! It's like having your very own detective on the case!
+Person 2- (Chuckling) Detective me, huh? Alright, sounds fancy!
+Person 1- (Nods) It gets even better! They work directly with your medical treatment, negotiating lower bills, and getting you more money for pain and suffering!
+Person 2- (Grinning) More money, huh? I like the sound of that! But can they guarantee a big payday?
+Person 1- (Winking) They can't guarantee it, but they work with the best of the best attorneys who have a track record of getting big settlements!
+Person 2- (Thumbs up) Alright, I'm sold! Where do I sign up?
+Person 1- (Excitedly) Head over to caraccidenthelp.org, and get ready to change your financial life!
+Person 2- (Enthusiastic) Let's do this! No more lowball offers for us!
+Person 1- (Joining in) That's the spirit! Car Accident Help, here we come!
+(Note, This skit is designed to be a fun and engaging conversation between two friends discussing the benefits of Car Accident Help. It highlights the brand's personality traits and unique selling points in a lighthearted manner.)

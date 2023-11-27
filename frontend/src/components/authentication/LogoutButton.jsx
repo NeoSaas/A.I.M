@@ -11,7 +11,7 @@ function LogoutButton({ setIsAuthenticated }) {
         try {
             const csrfToken = getCookie('csrftoken'); // get csrf
             axios.post(
-                'http://neosaas.net/api/logout/',
+                'http://127.0.0.1:8000/api/logout/',
             );
             setIsAuthenticated(false);
             nav('/');
