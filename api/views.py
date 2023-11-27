@@ -181,7 +181,7 @@ def invoke_endpoint(request):
 
 @api_view(['POST'])
 def OPAIEndpointExisting(request):
-    client = OpenAI(organization='org-2oZsacQ1Ji3Xr0uveLpwg50m', api_key='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')
+    client = OpenAI(organization='org-2oZsacQ1Ji3Xr0uveLpwg50m', api_key=settings.OPEN_AI_KEY)
     conversation = Conversation.objects.filter(id=request.data.get('convo_id'))
     
     convo_messages = conversation[0].messages
@@ -204,7 +204,7 @@ def OPAIEndpointExisting(request):
 
 @api_view(['POST'])
 def OPAIEndpointCreate(request):
-    client = OpenAI(organization='org-2oZsacQ1Ji3Xr0uveLpwg50m', api_key='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')
+    client = OpenAI(organization='org-2oZsacQ1Ji3Xr0uveLpwg50m', api_key=settings.OPEN_AI_KEY)
     
     response = client.chat.completions.create(
         model="ft:gpt-3.5-turbo-1106:personal::8Lj9L3WV",
