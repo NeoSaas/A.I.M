@@ -5,6 +5,8 @@ import { BsFillChatLeftTextFill, BsSend } from 'react-icons/bs';
 import DarkModeToggle from './DarkModeToggle';
 import LogoutButton from './authentication/LogoutButton';
 import TopBar from './TopBar';
+import 'react-loader-spinner';
+import { Circles } from 'react-loader-spinner';
 
 const ExpandedConversation = (props) => {
   const [conversation, setConversation] = useState([]);
@@ -12,6 +14,7 @@ const ExpandedConversation = (props) => {
   const [message, setMessage] = useState('');
   const { convo_id } = useParams();
   const [activeTab, setActiveTab] = useState('conversations');
+  const [loading, setLoading] = useState(false);
   const nav = useNavigate();
 
   useEffect(() => {
@@ -31,6 +34,11 @@ const ExpandedConversation = (props) => {
     };
 
     fetchData();
+    const interval = setInterval(fetchData, 1000);
+
+    return () => {
+        clearInterval(interval);
+    };
   }, [convo_id]);
   
 
@@ -46,6 +54,7 @@ const ExpandedConversation = (props) => {
         console.error('Error adding message:', error);
       });
     const query = message;
+    setLoading(true);
     const response = await axios.post('http://127.0.0.1:8000/api/OPAIInference/', {query, convo_id});
     const response_payload = response.data["response-payload"]
     await axios.post(`http://127.0.0.1:8000/api/conversations/${convo_id}/add_message/`, {
@@ -54,6 +63,8 @@ const ExpandedConversation = (props) => {
       })
       .then(response => {
         console.log('Message added successfully:', response.data);
+        setTimeout(()=> setLoading(false), 3000);
+        
       })
       .catch(error => {
         console.error('Error adding message:', error);
@@ -88,13 +99,31 @@ const ExpandedConversation = (props) => {
         <div className="flex-1 flex flex-col relative h-full max-h-screen">
           <div className="p-4 overflow-y-auto sticky mt-24 w-full inline-grid grid-flow-row">
             {/* Conversation Area */}
-            {messages.map((msg, index) => (
-              <div key={index} className={`mb-4 border rounded-lg p-4 h-auto w-max max-w-[100vh] ${msg.sender === 'user' ? 'ml-auto bg-black text-white dark:text-black dark:bg-slate-300' : 'mr-auto bg-slate-100 dark:bg-slate-900'}`}>
-                {msg.content}
-              </div>
-            ))}
+            {messages &&
+              messages.map((msg, index) => (
+                <div
+                  key={index}
+                  className={`mb-4 border rounded-lg p-4 h-auto w-max max-w-[100vh] ${
+                    msg.sender === 'user'
+                      ? 'ml-auto bg-black text-white dark:text-black dark:bg-slate-300'
+                      : 'mr-auto bg-slate-100 dark:bg-slate-900'
+                  }`}
+                >
+                  {msg.sender === 'assistant' && index === messages.length - 1 ? (
+                    <>
+                      {loading ? (
+                        <Circles color="#00BFFF" height={80} width={80} />
+                      ) : (
+                        msg.content
+                      )}
+                    </>
+                  ) : (
+                    msg.content
+                  )}
+                </div>
+              ))}
           </div>
-          <div className="p-4 flex items-center bg-[#FAF9F6] dark:bg-slate-800 absolute w-full">
+          <div className="p-4 flex items-center bg-[#FAF9F6] dark:bg-slate-800 absolute w-full dark:text-black">
             {/* Input Area */}
             <input
               type="text"

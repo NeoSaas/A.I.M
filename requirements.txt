@@ -1,4 +1,8 @@
-django==4.2.4
-django-rest-framework==0.1.0
-django-cors-headers==4.2.0
-requests==2.31.0
+django
+django-rest-framework
+django-cors-headers
+requests
+pymongo
+mongoengine
+social-auth-app-django
+djongo
